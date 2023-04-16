@@ -6,9 +6,9 @@ public class Main {
     public static void main(String[] args) {
         //математические оперции
         int rate = 15;
-        int HoursPerWeek = 40;
-        int WeeksPerMonth = 4;
-        int resultInt = rate*HoursPerWeek*WeeksPerMonth;
+        int hoursPerWeek = 40;
+        int weeksPerMonth = 4;
+        int resultInt = rate*hoursPerWeek*weeksPerMonth;
         System.out.println(resultInt);
 
         int items = 23;
@@ -19,9 +19,19 @@ public class Main {
 
         int currentAge = 20;//динамическое число
 
-        boolean canMarried = currentAge >= 18;
-        boolean cantMarried = currentAge > 0 && currentAge < 18;
-        boolean error = currentAge < 0;
+        boolean canMarried = currentAge >= 18;//true
+        boolean cantMarried = currentAge > 0 && currentAge < 18;//false
+        boolean error = currentAge < 0;//false
+        if (canMarried) {
+            System.out.println("you can married");
+        }
+        if (cantMarried) {
+            System.out.println("you can't married");
+        }
+
+        if (error) {
+            System.out.println("age error");
+        }
 
         // переполнение при математических операциях
         byte x = 100;
